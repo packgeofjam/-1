@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <title>Добро пожаловать!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>шапка</header>
+        <main>
+            <div>картинка</div>
+            <div>
+                <h1>Заголовок</h1>
+                <p>текст</p>
+                <a href="">кнопка</a>
+            </div>
+        </main>
+        <footer>подвал</footer>
+    </div>
+    <script>
+    var userLang = navigator.language || navigator.userLanguage;
+    var userLang_detected = userLang.toLowerCase();
+    if (userLang_detected != 'ru-ru' && userLang_detected != 'ru') {
+        document.title = 'Welcome!';
+        document.getElementById('t1').innerHTML = 'Welcome!';
+        document.getElementById('t2').innerHTML = 'Open Server Panel is running ;-)';
+        document.getElementById('t3').innerHTML = 'User\'s manual <i class="right"></i>';
+    }
+    </script>
+</body>
+
+</html>
